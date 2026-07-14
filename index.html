@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Yusron | Web Developer</title>
+  <meta name="description" content="Yusron — Teknologi Informasi student & web developer. Portfolio, projects, and skills." />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>✨</text></svg>" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body class="is-loading">
+
+  <div class="preloader" id="preloader">
+    <div class="preloader__mark">Yusron Alfatah</div>
+    <div class="preloader__count" id="preloaderCount">0%</div>
+    <div class="preloader__bar"><span id="preloaderBar"></span></div>
+  </div>
+
+  <div class="navwrap">
+    <nav class="nav">
+      <div class="nav__brand">
+        <img src="assets/profile.jpg" alt="Yusron" />
+        <span class="status"><span class="dot"></span>Online</span>
+      </div>
+      <div class="nav__links">
+        <a href="index.html" class="active">Home</a>
+        <a href="projects.html">Projects</a>
+        <a href="certifications.html">Certificates</a>
+        <a href="contact.html">Contact</a>
+      </div>
+      <a href="contact.html" class="nav__cta">Contact Me</a>
+    </nav>
+  </div>
+
+  <header class="hero container">
+    <p class="eyebrow">Web Development · AI Architecture · Cybersecurity</p>
+    <h1>Hi, I'm Yusron Alfatah —<br />Web &amp; Creative Developer</h1>
+    <p class="lead">
+      I build modern, interactive web experiences and explore AI-driven
+      architecture and cybersecurity — from portfolio sites and community
+      platforms to Three.js 3D scenes and Python-based ML/CV tools.
+    </p>
+    <div class="btn-row">
+      <a class="btn btn--primary" href="projects.html">See My Work</a>
+      <a class="btn" href="contact.html">Get in Touch</a>
+    </div>
+  </header>
+
+  <section id="about" class="container">
+    <p class="eyebrow">About</p>
+    <div class="about">
+      <div class="card about-card">
+        <h2>About Me</h2>
+        <p>
+          I'm Yusron Alfatah, a Teknologi Informasi student who enjoys
+          building full working software — not just tutorials. My focus
+          spans web development, exploring AI-driven architecture, and
+          cybersecurity fundamentals — from responsive interfaces to
+          interactive 3D scenes and computer-vision experiments.
+        </p>
+        <p>
+          Outside of code, I'm into indie/alt music (Reality Club,
+          Cigarettes After Sex, The 1975) and philosophy — that reflective,
+          personal side often ends up in my creative projects too.
+        </p>
+        <div class="stats">
+          <div class="stat"><b>6+</b><span>Projects Built</span></div>
+          <div class="stat"><b>2+</b><span>Years Learning</span></div>
+        </div>
+        <p class="about-tagline">Belajar dengan cara membangun, bukan cuma menonton tutorial.</p>
+      </div>
+
+      <div class="about-photo">
+        <div class="frame">
+          <img src="assets/profile.jpg" alt="Foto Yusron" />
+          <div class="badge">
+            <b>Yusron Alfatah</b>
+            <span>Web Dev · AI Architecture · Cybersecurity</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="tools" class="container">
+    <p class="eyebrow">Tools &amp; Technologies</p>
+    <h2>My Professional Skills</h2>
+
+    <div class="tools-grid">
+      <div class="tool-card"><div class="icon" style="background:#5fe3e8">JS</div><div><div class="name">JavaScript</div><div class="sub">Language</div></div></div>
+      <div class="tool-card"><div class="icon" style="background:#a78bfa">3</div><div><div class="name">Three.js</div><div class="sub">3D / WebGL</div></div></div>
+      <div class="tool-card"><div class="icon" style="background:#f2c078">Py</div><div><div class="name">Python</div><div class="sub">Language</div></div></div>
+      <div class="tool-card"><div class="icon" style="background:#e28fd0">DB</div><div><div class="name">MySQL</div><div class="sub">Database</div></div></div>
+      <div class="tool-card"><div class="icon" style="background:#ff7a7a">H</div><div><div class="name">HTML5</div><div class="sub">Markup</div></div></div>
+      <div class="tool-card"><div class="icon" style="background:#7c9bff">C</div><div><div class="name">CSS3</div><div class="sub">Styling</div></div></div>
+      <div class="tool-card"><div class="icon" style="background:#8fd67a">Gi</div><div><div class="name">Git</div><div class="sub">Version Control</div></div></div>
+      <div class="tool-card"><div class="icon" style="background:#cfd6e3">Hb</div><div><div class="name">GitHub</div><div class="sub">Repository</div></div></div>
+      <div class="tool-card"><div class="icon" style="background:#6cf0d2">Vs</div><div><div class="name">VS Code</div><div class="sub">Code Editor</div></div></div>
+      <div class="tool-card"><div class="icon" style="background:#ffd76c">Nt</div><div><div class="name">Netlify</div><div class="sub">Deployment</div></div></div>
+      <div class="tool-card"><div class="icon" style="background:#c39bff">Rc</div><div><div class="name">rich</div><div class="sub">Python Lib</div></div></div>
+      <div class="tool-card"><div class="icon" style="background:#7fe0a0">Pg</div><div><div class="name">pygame</div><div class="sub">Python Lib</div></div></div>
+    </div>
+  </section>
+
+  <footer>© 2026 Yusron. Built with care, one project at a time.</footer>
+
+  <script>
+    (function () {
+      var countEl = document.getElementById("preloaderCount");
+      var barEl = document.getElementById("preloaderBar");
+      var preloader = document.getElementById("preloader");
+      var n = 0;
+      var timer = setInterval(function () {
+        n += Math.floor(Math.random() * 8) + 3;
+        if (n >= 100) n = 100;
+        countEl.textContent = n + "%";
+        barEl.style.width = n + "%";
+        if (n >= 100) {
+          clearInterval(timer);
+          setTimeout(function () {
+            preloader.classList.add("hide");
+            document.body.classList.remove("is-loading");
+          }, 250);
+        }
+      }, 90);
+    })();
+  </script>
+</body>
+</html>

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Yusron | Contact</title>
+  <meta name="description" content="Get in touch with Yusron." />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>✨</text></svg>" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <div class="navwrap">
+    <nav class="nav">
+      <div class="nav__brand">
+        <img src="assets/profile.jpg" alt="Yusron" />
+        <span class="status"><span class="dot"></span>Online</span>
+      </div>
+      <div class="nav__links">
+        <a href="index.html">Home</a>
+        <a href="projects.html">Projects</a>
+        <a href="certifications.html">Certificates</a>
+        <a href="contact.html" class="active">Contact</a>
+      </div>
+      <a href="contact.html" class="nav__cta">Contact Me</a>
+    </nav>
+  </div>
+
+  <section class="container" style="padding-top:60px;">
+    <p class="eyebrow">Get in Touch</p>
+    <h2 style="font-size:34px;">Contact &amp; Chat</h2>
+    <p style="max-width:520px;margin-top:10px;">Punya project atau ide kolaborasi? Kirim pesan lewat form, atau langsung lewat email/GitHub di bawah.</p>
+
+    <div class="contact-grid">
+      <div class="card chat-card">
+        <div class="chat-card__head"><span class="dot"></span> Chat Room (preview)</div>
+        <div class="chat-card__body">
+          <div class="msg msg--them">Selamat datang di web portfolio saya, semoga suka 👋</div>
+          <div class="msg msg--me">Wah keren, boleh diskusi soal project bareng gak?</div>
+          <div class="msg msg--them">Boleh banget, langsung isi form di samping atau email aja ya 🙌</div>
+        </div>
+        <div class="chat-card__tag">*Preview tampilan saja — untuk pesan sungguhan, pakai form atau email di samping.</div>
+      </div>
+
+      <div class="card form-card">
+        <form onsubmit="event.preventDefault(); window.location.href='mailto:yusronalfatah21@gmail.com?subject=Halo dari '+encodeURIComponent(document.getElementById('fname').value)+'&body='+encodeURIComponent(document.getElementById('fmsg').value);">
+          <div class="field">
+            <label for="fname">Full Name</label>
+            <input id="fname" type="text" placeholder="Nama kamu" required />
+          </div>
+          <div class="field">
+            <label for="femail">Email</label>
+            <input id="femail" type="email" placeholder="email@kamu.com" required />
+          </div>
+          <div class="field">
+            <label for="fmsg">Message</label>
+            <textarea id="fmsg" placeholder="Ceritain project atau ide kamu..." required></textarea>
+          </div>
+          <button class="btn btn--primary" type="submit" style="width:100%;justify-content:center;">Send Message</button>
+        </form>
+      </div>
+    </div>
+
+    <div class="contact-links">
+      <a href="mailto:yusronalfatah21@gmail.com">✉ yusronalfatah21@gmail.com</a>
+      <a href="https://github.com/yusronalfatah21-eng" target="_blank" rel="noreferrer">⌥ github.com/yusronalfatah21-eng</a>
+      <a href="https://instagram.com/_yusronalf" target="_blank" rel="noreferrer">◎ @_yusronalf</a>
+    </div>
+
+    <div class="note"><b>Info:</b> Form ini pakai <code>mailto:</code> sederhana (buka aplikasi email pas di-submit). Kalau mau form beneran ngirim tanpa buka app (misal langsung ke inbox/database), bilang aja, aku bisa bantu tambahin pakai Netlify Forms.</div>
+  </section>
+
+  <footer>© 2026 Yusron. Built with care, one project at a time.</footer>
+
+</body>
+</html>
